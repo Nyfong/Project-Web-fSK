@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <section class="sec-1 w-full h-[70px] " >
+    <section class="sec-1 w-full h-[70px] sticky top-0 bg-white z-[1000]" >
         <nav class="w-full h-full flex">
             <div class="nav-expand w-[50%] h-full flex items-center p-4">
                 <p class="hvr-underline-revea  hvr-underline-from-left">OYTEE</p>
@@ -36,8 +36,12 @@
                     </ul>
                 </div>
                 <div class="profile w-[20%] flex items-center gap-2 h-full justify-around">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping text-xl relative">
+                        <div class="notification w-[15px] h-[15px] rounded-full bg-green-400 absolute  text-white flex items-center justify-center text-[7px] top-[-5px] left-[15px]">
+                            1
+                        </div>
+                    </i>
+                    <i class="fa-regular fa-heart text-xl"></i>
                     <div class="rounded-full w-[40px] h-[40px] bg-green-400  border-2 border-green-500 overflow-hidden ">
                         <img src="https://www.meme-arsenal.com/memes/04a8b5db8363deefc63fd35461ce6c68.jpg" 
                         class="w-full h-full object-cover border-green-500"
@@ -47,8 +51,79 @@
             </div>
         </nav>
     </section>
-    
-    
+    <section class="sec-2 w-full h-[1200px]  flex p-3 ">
+        <div class="content w-full h-full p-2  rounded-lg flex">
+            <!--  Poster Card-- -->
+            <div class="sidebar w-[30%] h-full rounded-xl bg-green-100 p-3">
 
+                     
+                
+            </div>
+            <div class="content-1 w-[70%] h-full rounded-lg mx-1 p-2 ">
+                <div class="row  flex flex-wrap gap-2">
+                    <div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50">
+                        <div class="card w-full relative">
+                            <div class="heart-tapped absolute top-[10px] left-[10px]
+                             bg-pink-300 w-[30px] h-[30px] rounded-full
+                            flex items-center justify-center
+                            ">
+                            <i class="fa-regular fa-heart text-white"></i>
+                            </div>
+                            <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png"
+                            class="w-full h-[300px]"
+                            alt="">
+                            <div class="card-details  flex flex-col  justify-between gap-3 h-[50px]  w-full p-2">
+                                <div class="name">
+                                    <p>Pka Ey jg tov </p>
+                                </div>
+                                <div class="star text-yellow-300 flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
+                                <p>253 EU</p>
+                                <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <p class=" text-[10px] flex items-center justify-center"> Add to Cart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50">
+                        <div class="card w-full">
+                            <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt="">
+                            <div class="card-details  flex flex-col  justify-between gap-3 h-[50px]  w-full p-2">
+                                <div class="name">
+                                    <p>Pka Ey jg tov </p>
+                                </div>
+                                <div class="star text-yellow-300 flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
+                                <p>253 EU</p>
+                                <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <p class=" text-[10px] flex items-center justify-center"> Add to Cart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    
+    <script src="../Js/display.js"></script>
 </body>
 </html>
