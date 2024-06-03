@@ -19,6 +19,26 @@ const DisplayList =[
         name:"Ficus elastica 'Robusta' - Indian rubber tree",
         price:"91.9$"
     },   
+    {
+        pic:"https://i.pinimg.com/736x/58/9d/4a/589d4a02eccbee79513e0d19d36d088c.jpg",
+        name:"Tropical Plant with Green Leaves ",
+        price:"33.9$"
+    },
+    {
+        pic:"https://hortology.co.uk/cdn/shop/files/Ficus-elastica-Robusta-Rubber-Plant-24x80cm-Lisbon-Plant-Pot-Anthracite-26x26cm_15863bd8-1d64-4b63-a016-9ec33053b16b_1600x.jpg?v=1687429902",
+        name:"Ficus elastica Robusta - Rubber Plant Indoor Plants",
+        price:"21.0$"
+    },
+    {
+            pic:"https://imgix.be.green/63640479d5c27125542305.jpg",
+            name:"Ficus elastica tineke XL ",
+            price:"43.9$"
+    },
+    {
+            pic:"https://palmcentre.co.uk/wp-content/uploads/2023/08/F_16395_603c118c1d3fd.jpg",
+            name:"Ficus elastica 'Robusta' - Indian rubber tree",
+            price:"91.9$"
+    }, 
     
 ];
 
@@ -93,9 +113,9 @@ const Display_Array = () =>{
         </div>
         <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
             <p>${el.price}</p>
-            <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
+            <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right "  id="addtocart">
             <i class="fa-solid fa-basket-shopping"></i>
-            <p class=" text-[10px] flex items-center justify-center"> Add to Cart</p>
+            <p class=" text-[10px] flex items-center justify-center"   > Add to Cart</p>
             </div>
         </div>
     </div>

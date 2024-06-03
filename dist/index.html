@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/output.css">
     <link rel="stylesheet" href="../style/ClientStyle/index.css">
-
+   
     <link rel="stylesheet" href="../style/Client/index.css">
-
     <title>Document</title>
 </head>
 <body>
@@ -51,14 +50,14 @@
             </div>
         </nav>
     </section>
-    <section class="sec-2 w-full h-[1200px]  flex p-3 ">
-        <div class="content w-full h-full p-2  rounded-lg flex">
+    <section class="sec-2 w-full h-[1200px]  flex p-3  ">
+        <!-- contain container asaid and show product -->
+        <div class="content w-full h-full p-2  rounded-lg flex ">
             <!--  Poster Card-- -->
             <div class="sidebar w-[30%] h-full rounded-xl bg-green-100 p-3">
 
-                     
-                
             </div>
+          <!-- content-show Prodoct -->
             <div class="content-1 w-[70%] h-full rounded-lg mx-1 p-2 ">
                 <div class="row  flex flex-wrap gap-2">
                     <div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50">
@@ -84,21 +83,54 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                             </div>
-                            <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
+                            <div class="card-details flex  justify-between items-center w-full 0 p-2 " >
                                 <p>253 EU</p>
-                                <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
+                                <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right "  id="addtocart">
                                 <i class="fa-solid fa-basket-shopping"></i>
-                                <p class=" text-[10px] flex items-center justify-center"> Add to Cart</p>
+                                <p class=" text-[10px] flex items-center justify-center" id="addtocart"> Add to Cart</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50">
-                        <div class="card w-full">
-                            <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt="">
-                            <div class="card-details  flex flex-col  justify-between gap-3 h-[50px]  w-full p-2">
+                
+             </div>
+             <!-- end row -->
+           </div>
+           <!-- end show product -->
+        </div>
+    </section>
+        <!-- show aside payment -->
+    <section class="sec-3   absolute top-[80px] right-[20px] hidden ease-in" id="showcart">
+        <div class="bar-payment  rounded-lg  bg-slate-200 h-[650px] w-[350px]">
+            <div class="row w-full p-[10px]">
+                <div class="col w-full p-1">
+                    <div class="card w-ful p-2l">
+                        <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png"
+                        class="w-full h-[300px] "
+                        alt="">
+                        <div class="card-details  flex flex-col  justify-between gap-3 h-[50px]  w-full p-2">
+                            <div class="name">
+                                <p>Pka Ey jg tov </p>
+                            </div>
+                            <div class="star text-yellow-300 flex justify-cneter gap-2">
+                                <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt=""
+                                class="w-[60px] h-[60px] bg-green-300 rounded-full"
+                                >
+                                <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt=""
+                                class="w-[60px] h-[60px] bg-green-300 rounded-full"
+                                >
+                                <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt=""
+                                class="w-[60px] h-[60px] bg-green-300 rounded-full"
+                                >
+                                <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-indoor-plant-flowerpot-png-image_11669796.png" alt=""
+                                class="w-[60px] h-[60px] bg-green-300 rounded-full"
+                                >
+                            </div>
+                            <div class=" card-details   flex flex-col  justify-between gap-3 h-[100px]  w-full p-2">
                                 <div class="name">
-                                    <p>Pka Ey jg tov </p>
+                                    <p class="text-sm">Ficus elastica tineke XL. Native to the tropical rainforests of Asia and India,
+                                         this plant is a favourite of many interior designers because of the elegant beauty of its leaves.
+                                         It is also very easy to care for. </p>
                                 </div>
                                 <div class="star text-yellow-300 flex">
                                     <i class="fa-solid fa-star"></i>
@@ -107,23 +139,25 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                            </div>
-                            <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
-                                <p>253 EU</p>
-                                <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
-                                <i class="fa-solid fa-basket-shopping"></i>
-                                <p class=" text-[10px] flex items-center justify-center"> Add to Cart</p>
+                                <div class="card-details flex  justify-between items-center w-full 0 p-2 ">
+                                    <p>${el.price}</p>
+                                    <div class="Addtocart flex  w-[100px] h-[50px]  p-2 items-center  justify-between rounded-xl bg-white overflow-hidden  hvr-sweep-to-right " >
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <p class=" text-[10px] flex items-center justify-center" > Add to Cart</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
             </div>
         </div>
-        </div>
+
     </section>
+
     
     
+    <script src="../Js/addtocart.js"></script>
     <script src="../Js/display.js"></script>
 </body>
 </html>
