@@ -150,11 +150,11 @@ const Display_Array = () =>{
     DisplayList.forEach((el)=>{
     txt+=`
 
-<div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50 relative  overflow-hidden">
+<div class="col w-[290px] border-2 border-green-400 rounded-xl bg-slate-50 relative  overflow-hidden">
                 <div class="heart-tapped absolute top-[10px] right-[10px]
                     bg-pink-300 w-[30px] h-[30px] rounded-full
-                    flex items-center justify-center z-[100]
-                    ">
+                    flex items-center justify-center z-[500]
+                    " id="heart-1" >
                 <i class="fa-regular fa-heart text-white"></i>
             </div>
     <a href="../dist/detail.html">
@@ -162,7 +162,7 @@ const Display_Array = () =>{
         
         <div class="w-full h-[300px]">
             <img src="${el.pic}" 
-            class="w-full h-full transition duration-300 ease-in-out hover:scale-110"
+            class="w-full h-full transition duration-300 ease-in-out"
             alt="">
         </div>
        

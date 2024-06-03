@@ -2,12 +2,17 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '1200': '1200px',
+        '290':'290px',
+      },
+    },
   },
-  plugins: [
-    require('flowbite/plugin')({
-      charts: true,
-  }),
-  ],
+  // plugins: [
+  //   require('flowbite/plugin')({
+  //     charts: true,
+  // }),
+  // ],
 }
 

@@ -12,13 +12,13 @@
 </head>
 <body>
 
-    <section class="sec-1 w-full h-[70px] sticky top-0 bg-white z-[1000]" >
-        <nav class="w-full h-full flex">
+    <section class="sec-1 w-full h-[70px] sticky top-0 bg-white z-[1000] px-6" >
+        <nav class=" w-1200 h-full flex m-auto ">
             <div class="nav-expand w-[50%] h-full flex items-center p-4">
                 <p class="hvr-underline-revea  hvr-underline-from-left">OYTEE</p>
             </div>
             <div class="nav-navbar w-[50%] h-full flex items-center justify-between p-3">
-                <div class="menu  w-[80%]">
+                <div class="menu  w-[75%]">
                     <ul class="flex gap-10">
                         <li>
                             <a href="" class="  text-green-300 hover:text-green-500">Shop</a>
@@ -35,14 +35,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="profile w-[20%] flex items-center gap-2 h-full justify-around">
+                <div class="profile w-[25%] flex items-center gap-2 h-full justify-around">
 
                     <i class="fa-solid fa-bag-shopping text-xl relative" id="addtocart">
                         <div class="notification w-[20px] h-[20px] rounded-full bg-green-400 absolute  text-white flex items-center justify-center text-[7px] top-[-5px] left-[15px]">
                             1
                         </div>
                     </i>
-                    <i class="fa-regular fa-heart text-xl"></i>
+                    <i class="fa-regular fa-heart text-xl relative" >
+                        <div class="notification w-[20px] h-[20px] rounded-full bg-green-400 absolute  text-black flex items-center justify-center text-[7px] top-[-5px] left-[15px]" id="favorite">
+                            1
+                        </div>
+                    </i>
                     <!-- user profile -->
                     <a href="/dist/profile/profile.html">
                         <div class="rounded-full w-[40px] h-[40px] bg-green-400  border-2 border-green-500 relative   hover:Pfdropdown visible">
@@ -56,11 +60,11 @@
             </div>
         </nav>
     </section>
-    <section class="sec-2 w-full   flex p-3  ">
+    <section class="sec-2 w-[1200px]  m-auto  flex p-3  ">
         <!-- contain container asaid and show product -->
         <div class="content w-full  p-2  rounded-lg flex ">
             <!--  left Card-- -->
-            <div class="sidebar w-[30%]  rounded-xl bg-slate-100 p-3">
+            <div class="sidebar w-[250px]  rounded-xl bg-slate-100 p-3">
                 <div class="filter w-full h-[60px] border-b-2 border-slate-50 ">
                     <p>Filter</p>
                 </div>
@@ -123,9 +127,9 @@
 
             </div>
           <!-- content-show Prodoct -->
-            <div class="content-1 w-[70%] rounded-lg   ">
+            <div class="content-1 w-[950px] rounded-lg  ">
                 <!-- search bar -->
-                <div class="row-search my-4  w-full  h-[100] sticky top-[70px] z-[500]  bg-white ">
+                <div class="row-search my-4  w-full  h-[100] sticky top-[70px] z-[600]  bg-white ">
                     <div class="col w-full px-1">
                     <form class="max-w-md ">   
                         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -145,17 +149,16 @@
                 <!-- Products -->
                 <div class="row  flex flex-wrap gap-2 p-3 ">
                    
-                 
-                    <div class="col w-[300px] border-2 border-green-400 rounded-xl bg-slate-50 relative  overflow-hidden">
-                        <div class="heart-tapped absolute top-[10px] right-[10px]
+                <div class="col w-[290px] border-2 border-green-400 rounded-xl bg-slate-50 relative  overflow-hidden">
+                    <!-- heart   -->
+                    <div class="heart-tapped absolute top-[10px] right-[10px]
                             bg-pink-300 w-[30px] h-[30px] rounded-full
                             flex items-center justify-center z-[1000]
-                            ">
+                            " id="heart-1">
                         <i class="fa-regular fa-heart text-white"></i>
                     </div>
                     <a href="../dist/detail.html">
-                    <div class="card w-full relative overflow-hidden">
-                        
+                    <div class="card w-full relative overflow-hidden">   
                         <div class="w-full h-[300px]">
                             <img src="${el.pic}" 
                             class="w-full h-full transition duration-300 ease-in-out hover:scale-110"
@@ -183,9 +186,8 @@
                         </div>
                     </div>
                     </a>
-                </div>
-                  
-                
+                 </div>
+                 <!-- end col -->
              </div>
              <!-- end row -->
            </div>
@@ -286,6 +288,7 @@
    
      
     <script src="../Js/display.js"></script>
+    <script src="/Js/heartTap/heartTap1.js"></script>
      <script src="../Js/addtocart.js"></script>
     
 </body>
