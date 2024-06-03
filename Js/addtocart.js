@@ -1,5 +1,5 @@
-const addtocart = document.getElementById("addtocart");
-const showcart = document.getElementById("showcart")
+var addtocart = document.getElementById("addtocart");
+var  showcart = document.getElementById("showcart");
 // $(document).ready(function()
 // {
 //     ("addtocart").click(function()
