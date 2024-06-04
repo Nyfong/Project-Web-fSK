@@ -150,7 +150,7 @@ const Display_Array = () =>{
     DisplayList.forEach((el)=>{
     txt+=`
 
-<div class="col w-[290px] border-2 border-green-400 rounded-xl bg-slate-50 relative  overflow-hidden">
+<div class="col w-[290px]  rounded-xl bg-slate-50 relative  overflow-hidden">
                 <div class="heart-tapped absolute top-[10px] right-[10px]
                     bg-pink-300 w-[30px] h-[30px] rounded-full
                     flex items-center justify-center z-[500]
@@ -194,3 +194,6 @@ const Display_Array = () =>{
     document.querySelector(".content-1").children[1].innerHTML =txt;
 }
 Display_Array()
+
+
+

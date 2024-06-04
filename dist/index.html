@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/output.css">
     <link rel="stylesheet" href="../style/ClientStyle/index.css">
-   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../style/Client/index.css">
+    <link rel="stylesheet" href="/style/Client/swipper.css">
     <title>Document</title>
 </head>
 <body>
@@ -43,7 +48,7 @@
                         </div>
                     </i>
                     <i class="fa-regular fa-heart text-xl relative" >
-                        <div class="notification w-[20px] h-[20px] rounded-full bg-green-400 absolute  text-black flex items-center justify-center text-[7px] top-[-5px] left-[15px]" id="favorite">
+                        <div class="notification w-[20px] h-[20px] rounded-full bg-green-400 absolute  text-white flex items-center justify-center text-[7px] top-[-5px] left-[15px]" id="favorite">
                             1
                         </div>
                     </i>
@@ -60,6 +65,49 @@
             </div>
         </nav>
     </section>
+    <section class="sec-banner w-[1200px] h-[300px] m-auto  flex gap-2 justify-start p-3 mt-[40px] rounded-md bg-slate-300 ">
+         <!-- Swiper -->
+            <div class="swiper mySwiper rounded-xl w-[800px] h-full">
+                <div class=" w-full h-full swiper-wrapper">
+                <div class="  w-full h-full  swiper-slide">
+                    <img src="https://www.shutterstock.com/image-vector/promo-sale-banner-houseplants-store-260nw-1950506587.jpg" 
+                    
+                    alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.shutterstock.com/image-vector/spring-sale-poster-vector-illustration-260nw-600370481.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://previews.123rf.com/images/appler/appler1807/appler180700086/114963798-summer-sale-banner-with-paper-art-cut-out-plants-grass-branches-on-green-background-floral-design.jpg" alt="">
+                </div>
+               
+               
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+              <!-- Swiper -->
+            <div class="swiper VerSwiper rounded-xl w-[400px] h-full">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide p-20">                    
+                    <img src="https://png.pngtree.com/png-vector/20231015/ourmid/pngtree-potted-house-plant-png-image_10164369.png" 
+                    
+                    alt="">
+
+                </div>
+                <div class="swiper-slide p-20">
+                    <img src="https://png.pngtree.com/png-vector/20240130/ourmid/pngtree-green-fresh-leaves-potted-plant-png-image_11516381.png" alt="">
+                </div>
+                <div class="swiper-slide p-20" >
+                    <img src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-green-tall-round-house-plant-in-pot-png-image_13028542.png" alt="">
+                </div>
+             
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+    </section>
+
+    <!-- main -->
     <section class="sec-2 w-[1200px]  m-auto  flex p-3  ">
         <!-- contain container asaid and show product -->
         <div class="content w-full  p-2  rounded-lg flex ">
@@ -127,7 +175,8 @@
 
             </div>
           <!-- content-show Prodoct -->
-            <div class="content-1 w-[950px] rounded-lg  ">
+            <div class="content-1 w-[950px] rounded-lg ">
+               
                 <!-- search bar -->
                 <div class="row-search my-4  w-full  h-[100] sticky top-[70px] z-[600]  bg-white ">
                     <div class="col w-full px-1">
@@ -146,6 +195,7 @@
 
                     </div>
                 </div>
+                
                 <!-- Products -->
                 <div class="row  flex flex-wrap gap-2 p-3 ">
                    
@@ -193,6 +243,35 @@
            </div>
            <!-- end show product -->
         </div>
+    </section>
+     <!-- panegation -->
+     <section class="panegation w-1200 h-[70px] m-auto flex items-center justify-center">
+        <nav aria-label="Page navigation example">
+            <ul class="inline-flex -space-x-px text-base h-10">
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+            </li>
+            <li>
+                <a href="#" aria-current="page" class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">1</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+            </li>
+            </ul>
+        </nav>
+
     </section>
         <!-- show aside payment -->
     <section class="sec-3    fixed top-[80px] right-[20px] ease-in hidden  z-[1000]" id="showcart">
@@ -289,7 +368,38 @@
      
     <script src="../Js/display.js"></script>
     <script src="/Js/heartTap/heartTap1.js"></script>
-     <script src="../Js/addtocart.js"></script>
+    <script src="../Js/addtocart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          
+        },
+        autoplay: {
+            delay: 1800,
+            disableOnInteraction: false,
+          },
+      });
+    </script>
+     <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".VerSwiper ", {
+      direction: "vertical",
+      loop:true,
+      pagination: {        
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
     
 </body>
 </html>
